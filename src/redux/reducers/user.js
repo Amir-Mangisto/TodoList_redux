@@ -1,10 +1,10 @@
-import { todoTypes } from "../types";
+// import { todoTypes } from "../types";
 
-const userReducer = (state,action)=>{
+const userReducer = (state={},action)=>{
     const {type,payload} = action;
     switch (type) {
-        case todoTypes.user:
-            return {...state,payload}
+        case "LOG IN":
+            return payload
     
         default:
             return state

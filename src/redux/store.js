@@ -6,6 +6,7 @@ const store = createStore(globalReducer, {
     { title: "do action", isCompleted: false },
     { title: "do some", isCompleted: false },
   ],
+  
 });
 
 export default store;

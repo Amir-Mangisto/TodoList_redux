@@ -1,6 +1,6 @@
 import {todoTypes} from "../types";
 
-const reducer = (state,action)=>{
+const reducer = (state=[],action)=>{
 const {type,payload} = action;
 switch (type) {
     case todoTypes.addTodo:
@@ -8,7 +8,7 @@ switch (type) {
         break;
 
     default:
-        break;
+        return state;
 }
 }
 
